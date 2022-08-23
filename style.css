@@ -1,0 +1,1023 @@
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  --max-width:100%;
+  --margin: 0px;
+
+  width: min(var(--max-width), 100% - (var(--padding)*2));
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* NavBar */
+
+body {
+  background: black;
+}
+
+.nav-wrapper {
+  background-color: black;
+  position: fixed;
+  z-index: 100001;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  height: 80px;
+}
+
+.primary-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.nav-list {
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+
+.titletext {
+  position:absolute;
+  color: #FFF;
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.navtext {
+  font-family: 'Ubuntu';
+  margin: 0 10px;
+  color: #FFF;
+  font-size: 0.8rem;
+}
+
+.navtext:hover {
+  text-decoration: none;
+  color: rgb(0, 145, 255);
+}
+
+.navlink {
+  margin: 0 10px;
+  color: #FFF;
+  font-size: 0.8rem;
+}
+
+.navlink:hover {
+  text-decoration: none;
+  color: rgb(0, 145, 255);
+  
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+.mobile-nav-toggle{
+  display: none;
+  width: 200%;
+}
+
+.hiddentitle {
+  display: none;
+}
+
+.icon-hamburger {
+  width: 2em;
+}
+
+
+
+/* Intro */
+
+#intro {
+  background-color: black;
+}
+
+.div1 {
+  padding: 5px;
+}
+
+.background-video {
+  background-position-x: center;
+  height: 100vh;
+  text-align: center;
+
+}
+
+.background-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  object-fit: fill;
+  opacity: .9;
+  padding: 0 2%;
+}
+
+.intrologo {
+  padding-top: 80px;
+  border-radius: 100%;
+  padding-bottom: 0px;
+  height: 60%;
+  position: relative;
+  z-index: 10;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.introtitle {
+  color: white;
+  font-family: 'Montserrat';
+  position: relative;
+  z-index: 10;
+
+}
+
+.introbtn {
+  background-color: rgb(0, 0, 0, 0);
+  border: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Ubuntu';
+  position: relative;
+  z-index: 10;
+}
+
+.introbtn:hover {
+  border-color: rgb(0, 145, 255);
+  color: rgb(0, 145, 255);
+  box-shadow: 0 0 25px rgb(0, 145, 255);
+}
+
+/* Max */
+
+#max {
+  margin: 0px 0 120px;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.column1 {
+  margin-top: 10%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.maxprofile {
+  border-radius: 30px;
+  box-shadow: 0px 0px 11px #fff;
+}
+
+.maxprofile:hover {
+  box-shadow: 0 0 25px rgb(0, 145, 255);
+}
+
+
+.aboutme {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 2rem;
+}
+
+.aboutmep {
+  font-family: 'Ubuntu';
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.smmmax {
+  align-content: center;
+  background-color: rgb(0, 0, 0, 0);
+  border: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: 'Ubuntu';
+}
+
+.smmmax:hover {
+  border-color: rgb(0, 145, 255);
+  color: rgb(0, 145, 255);
+  box-shadow: 0 0 25px rgb(0, 145, 255);
+  text-decoration: none;
+}
+
+.smmmaxbtn {
+  align-content: center;
+  background-color: rgb(0, 0, 0, 0);
+  border: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: 'Ubuntu';
+  margin-right: 30px;
+}
+
+.smmmaxbtn:hover {
+  border-color: rgb(0, 145, 255);
+  color: rgb(0, 145, 255);
+  box-shadow: 0 0 25px rgb(0, 145, 255);
+  text-decoration: none;
+}
+
+/* testimonials */
+
+#testimonials {
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  height: 400px;
+
+}
+
+.people {
+  text-align: center;
+  font-family: 'ubuntu';
+  font-size: 2rem;
+
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+
+
+.testimonial-text {
+  font-size: 1rem;
+}
+
+/* Footer */
+
+#footer {
+  padding: 1% 15%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: rgb(19, 18, 19);
+  text-align: right;
+}
+
+.social-icon:hover {
+  color: rgb(0, 145, 255);
+  
+}
+
+.footsocial {
+  text-align: right;
+
+}
+
+.footertext {
+  text-align: left;
+}
+
+
+.ftheading {
+  text-align: center;
+  font-family: 'Changa One';
+  font-size: 1.5rem;
+}
+
+.footeremail {
+  font-family: 'Ubuntu';
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footeremail:hover {
+  color: rgb(0, 145, 255);
+}
+
+
+/* Contact Me -- Page 2 --- */
+
+#contactme {
+
+  background-color: black;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10%;
+}
+
+.cntform {
+  padding-top: 2%;
+
+}
+
+.contactlogo {
+  height: 600px;
+  padding-right: 5%;
+}
+
+.cntlogo {
+  color: white;
+  text-align: center;
+}
+
+.cnt-icon {
+  color: white;
+  padding: 1%;
+  padding-bottom: 35%;
+}
+
+.cnt-icon:hover {
+  color: rgb(0, 145, 255);
+}
+
+
+.form-check-label {
+  color: black;
+}
+
+.cntform {
+  width: 500px;
+
+}
+
+.selector {
+  background-color: white;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 1%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+
+}
+
+.formtext {
+  color: black;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.formtext:hover {
+  color: black;
+}
+
+.s1and2 {
+  display:flex;
+  justify-content:space-between;
+  
+
+}
+
+.selector1 {
+  background-color: white;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 1%;
+  padding-right: 5%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+  width: 48%;
+
+
+}
+
+.selector2 {
+  background-color: white;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 1%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+  width: 48%;
+
+}
+
+.selector7 {
+  background-color: white;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 1%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+  height: 200px;
+
+}
+
+#textbox {
+  height: 140px;
+  width: 450px;
+}
+
+/* About me --Page 3--*/
+
+.thankyou {
+  background-color: white;
+  padding: 5%;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.tytext {
+  color: black;
+  text-align: center;
+}
+
+.homebtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0);
+  border: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Ubuntu';
+  margin: 5% 35%;
+}
+
+.homebtn:hover {
+  border-color: cadetblue;
+  color: cadetblue;
+  text-decoration: none;
+}
+
+/* Social Media Management --Page 3--*/
+
+#socialmedia {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-evenly;
+
+}
+
+.mediadiv1 {
+  padding: 0%;
+}
+
+.background-image {
+  background-position-x: center;
+  height: 35vh;
+  text-align: center;
+  background-color: black;
+
+}
+
+.background-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  object-fit: fill;
+}
+
+.mediatitle {
+  position: absolute;
+  color: white;
+  font-family: 'Montserrat';
+  position: relative;
+  padding-top: 200px;
+  z-index: 10;
+}
+
+.mediadiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+}
+
+.mediatext {
+  text-align: center;
+  font-size: 2rem;
+  width: 90%;
+  font-weight: bolder;
+
+}
+
+.mediatext2 {
+  font-size: 1.5rem;
+}
+
+.socialpic {
+  width: 90%;
+  float: right;
+}
+
+/* Why SSM --Page 3--*/
+
+#whyssm {
+  background-color: black;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  border-color: black;
+
+}
+
+.card {
+  border-color: black;
+  border-radius: 15px;
+}
+
+.whysmmtext {
+  padding: 5% 0%;
+  color: white;
+  font-weight: bolder;
+}
+
+.card-title {
+  color: black;
+  font-family: 'Montserrat';
+}
+
+.card-header {
+  background-color: cadetblue;
+}
+
+.leftcards {
+  margin-left: 10%;
+}
+
+.rightcards {
+  margin-right: 10%;
+}
+
+/* SMM enquiry */
+
+#smmenquiry {
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.smmformtext {
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bolder;
+
+}
+
+.smmfullform {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selectora {
+  background-color: white;
+  margin: 1%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 5%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.selectorb {
+  background-color: white;
+  margin: 1%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 5%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.selectorc {
+  background-color: white;
+  margin: 1%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 5%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.smmfullform2 {
+  display: flex;
+  justify-content:start;
+}
+
+.selectord {
+  background-color: white;
+  margin: 2.5%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 5%;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+.smmsubmit {
+  
+  align-content: center;
+  background-color: rgb(0, 0, 0, 0);
+  border: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Ubuntu';
+  margin: 90%;
+
+}
+
+.smmsubmit:hover {
+  border-color: cadetblue;
+  color: cadetblue;
+  text-decoration: none;
+}
+
+
+/* Gallery */
+
+
+#gallery {
+  padding-top: 110px;
+  background-color: black;
+  padding-bottom: 150px;
+}
+
+.gallerytext {
+  text-align: center;
+  padding: 5% 0% 10px 0%;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bolder;
+}
+
+.galleryunder {
+  text-align: center;
+  padding-bottom: 2%;
+  font-family: "Montserrat";
+  color: white;
+  font-weight:lighter;
+  font-size: 1rem;
+}
+
+.thumb {
+  margin-bottom: 30px;
+}
+
+img.zoom {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+}
+
+video.zoom {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+}
+
+
+.transition {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+
+.thumb:not(:hover) {
+  filter: grayscale(100%);
+}
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .30;
+  filter: alpha(opacity=40);
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  max-height: 360px;
+  margin-left: -300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover~#boxclose {
+  display: none;
+}
+
+.test:hover~.test2 {
+  display: none;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.modal-header {
+  border: none !important;
+}
+
+
+.close {
+  color: white !important;
+  font-size: 3rem !important;
+  opacity: 1 !important;
+}
+
+
+
+@media (max-width: 1135px) {
+
+  .navtext {
+    font-size: 0.6rem;
+  }
+  .navlink {
+    font-size: 0.6rem;
+  }
+
+  .background-video {
+    height: 70vh;
+    margin-bottom: 5%;
+  }
+
+  .background-video video {
+    height: 70vh;
+  }
+
+}
+
+
+.opened {
+  display: block;
+  position: fixed;
+}
+
+.mobile-nav-toggle {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0.5em;
+}
+
+.mobile-nav-toggle .icon-close {
+  display: none;
+}
+
+
+@media (max-width: 996px) {
+  .primary-navigation {
+    display: none;
+    width: 100%;
+    inset: 5.1rem 1rem;
+    position: fixed;
+    background-color: rgb(26, 25, 25);
+    height: 30vh;
+    width: 25vh;
+    border-radius: 20px;
+  }
+
+  .nav-list {
+    display: grid;
+    gap: 0.6rem ;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navicons {
+    margin-top: -20px;
+  }
+  
+  
+  .primary-navigation[data-visible] {
+    display: block;
+   
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+  
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
+
+  .icon-hamburger {
+    margin-left: 15px;
+  }
+
+
+ .smmmax {
+   font-size: 0.6rem;
+   padding: 6px 10px;
+   margin: 0px 2px;
+   transform: translateY(-20px);
+ }
+
+ .smmmaxbtn {
+  font-size: 0.6rem;
+  padding: 6px 10px;
+  margin: 0px 2px;
+}
+
+ 
+
+ #footer {
+   margin-top: 10%;
+ }
+
+ .social-icon {
+   font-size: 2rem;
+ }
+}
+
+@media (max-width: 425px) {
+  .titletext {
+    font-size: 1.1rem;
+  }
+
+  .nav-wrapper {
+    height: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .intrologo {
+    width: 60%;
+    height: 50%;
+  }
+
+  .background-video {
+    height: 60vh;
+  }
+
+  .background-video video{
+    height: 60%;
+  }
+}
