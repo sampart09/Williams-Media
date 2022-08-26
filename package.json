@@ -12,6 +12,7 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
-    "meta-viewport-ios-9": "^2.0.0"
+    "meta-viewport-ios-9": "^2.0.0",
+    "surge": "^0.23.1"
   }
 }
