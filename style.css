@@ -32,9 +32,9 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -46,7 +46,7 @@ select {
 }
 
 .container {
-  --max-width:100%;
+  --max-width: 100%;
   --margin: 0px;
 
   width: min(var(--max-width), 100% - (var(--padding)*2));
@@ -98,7 +98,7 @@ body {
 
 
 .titletext {
-  position:absolute;
+  position: absolute;
   color: #FFF;
   font-family: 'Ubuntu';
   font-size: 2rem;
@@ -141,11 +141,12 @@ body {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
-.mobile-nav-toggle{
+
+.mobile-nav-toggle {
   display: none;
   width: 200%;
 }
@@ -359,7 +360,7 @@ body {
 
 .social-icon:hover {
   color: rgb(0, 145, 255);
-  
+
 }
 
 .footsocial {
@@ -458,9 +459,9 @@ body {
 }
 
 .s1and2 {
-  display:flex;
-  justify-content:space-between;
-  
+  display: flex;
+  justify-content: space-between;
+
 
 }
 
@@ -505,6 +506,20 @@ body {
 #textbox {
   height: 140px;
   width: 450px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: rgb(0, 145, 255);
+  color: rgb(0, 145, 255);
+}
+
+#enquirybox {
+  width: 96%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: rgb(0, 145, 255);
+  color: rgb(0, 145, 255);
 }
 
 /* About me --Page 3--*/
@@ -539,12 +554,12 @@ body {
 }
 
 .homebtn:hover {
-  border-color: cadetblue;
-  color: cadetblue;
+  border-color: rgb(0, 145, 255);
+  color: rgb(0, 145, 255);
   text-decoration: none;
 }
 
-/* Social Media Management --Page 3--*/
+/* Social Media Management --Page 4--*/
 
 #socialmedia {
   display: flex;
@@ -624,14 +639,14 @@ body {
 
 .cards {
   display: flex;
-  justify-content: space-evenly;
-  border-color: black;
-
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
-  border-color: black;
-  border-radius: 15px;
+  border-style: none;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .whysmmtext {
@@ -646,16 +661,9 @@ body {
 }
 
 .card-header {
-  background-color: cadetblue;
+  background-color: rgb(0, 145, 255);
 }
 
-.leftcards {
-  margin-left: 10%;
-}
-
-.rightcards {
-  margin-right: 10%;
-}
 
 /* SMM enquiry */
 
@@ -690,6 +698,7 @@ body {
   border-width: 2px;
   border-radius: 10px;
 }
+
 .selectorb {
   background-color: white;
   margin: 1%;
@@ -700,6 +709,7 @@ body {
   border-width: 2px;
   border-radius: 10px;
 }
+
 .selectorc {
   background-color: white;
   margin: 1%;
@@ -710,9 +720,10 @@ body {
   border-width: 2px;
   border-radius: 10px;
 }
+
 .smmfullform2 {
   display: flex;
-  justify-content:start;
+  justify-content: start;
 }
 
 .selectord {
@@ -727,7 +738,7 @@ body {
 }
 
 .smmsubmit {
-  
+
   align-content: center;
   background-color: rgb(0, 0, 0, 0);
   border: white;
@@ -772,7 +783,7 @@ body {
   padding-bottom: 2%;
   font-family: "Montserrat";
   color: white;
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 1rem;
 }
 
@@ -899,6 +910,7 @@ video.zoom {
   .navtext {
     font-size: 0.6rem;
   }
+
   .navlink {
     font-size: 0.6rem;
   }
@@ -945,7 +957,7 @@ video.zoom {
 
 .mediatext2 {
   display: grid;
-  font-size: 1rem ;
+  font-size: 1rem;
 }
 
 
@@ -964,7 +976,7 @@ video.zoom {
 
   .nav-list {
     display: grid;
-    gap: 0.6rem ;
+    gap: 0.6rem;
     text-align: left;
     padding: 10px;
   }
@@ -975,11 +987,11 @@ video.zoom {
     display: inline;
     white-space: nowrap;
   }
-  
-  
+
+
   .primary-navigation[data-visible] {
     display: block;
-   
+
   }
 
   .mobile-nav-toggle {
@@ -989,7 +1001,7 @@ video.zoom {
     border: 0;
     padding: 0.5em;
   }
-  
+
   .mobile-nav-toggle .icon-close {
     display: none;
   }
@@ -1000,57 +1012,62 @@ video.zoom {
   }
 
 
- .smmmax {
-   font-size: 0.6rem;
-   padding: 6px 10px;
-   margin: 0px 2px;
-   transform: translateY(-20px);
- }
+  .smmmax {
+    font-size: 0.6rem;
+    padding: 6px 10px;
+    margin: 0px 2px;
+    transform: translateY(-20px);
+  }
 
- .smmmaxbtn {
-  font-size: 0.6rem;
-  padding: 6px 10px;
-  margin: 0px 2px;
-}
+  .smmmaxbtn {
+    font-size: 0.6rem;
+    padding: 6px 10px;
+    margin: 0px 2px;
+  }
 
- 
 
- #footer {
-   margin-top: 10%;
- }
 
- .social-icon {
-   font-size: 2rem;
- }
+  #footer {
+    margin-top: 10%;
+  }
 
- .whysmmtext {
+  .social-icon {
+    font-size: 2rem;
+  }
 
-  font-size: 2rem;
-}
+  .whysmmtext {
 
-.mediatext {
-  display: inline-flexbox;
-  justify-content: center;
-  font-size: 1rem;
-  margin-left: 20px;
-}
+    font-size: 2rem;
+  }
 
-.mediatext2 {
-  display: grid;
-  font-size: 0.8rem ;
-}
+  .mediatext {
+    display: inline-flexbox;
+    justify-content: center;
+    font-size: 1rem;
+    margin-left: 20px;
+  }
 
-.socialpic {
-  transform: translateY(50px);
-}
+  .mediatext2 {
+    display: grid;
+    font-size: 0.8rem;
+  }
 
-.mediatitle {
-  padding-top: 100px;
-}
+  .socialpic {
+    transform: translateY(50px);
+  }
 
-.mediadiv1 {
-  margin-bottom: -70px;
-}
+  .mediatitle {
+    padding-top: 100px;
+  }
+
+  .mediadiv1 {
+    margin-bottom: -70px;
+  }
+
+  .cardtext {
+    font-size: 0.9rem;
+  }
+
 
 }
 
@@ -1067,19 +1084,23 @@ video.zoom {
     display: grid;
     justify-content: center;
   }
+
   .smmfullform2 {
     display: grid;
     justify-content: center;
     transform: translateX(-3px);
   }
+
   .selectora {
     width: 250px;
     padding-left: 15px;
   }
+
   .selectorb {
     width: 250px;
     padding-left: 15px;
   }
+
   .selectorc {
     width: 250px;
     padding-left: 15px;
@@ -1089,6 +1110,7 @@ video.zoom {
     width: 250px;
     padding-left: 15px;
   }
+
   #textbox {
     width: 215px;
     height: 170px;
@@ -1100,54 +1122,47 @@ video.zoom {
     margin-bottom: -160px;
   }
 
-    .smmformtext {
-      font-size: 2rem;
-      margin-bottom: 40px;
-    }
+  .smmformtext {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
 
-    .cards{
-      display: grid;
-      transform: translateX(-35px);
-    }
-    .rightcards{
-      transform: translateX(77px);
-    }
+  .whysmmtext {
 
-    .whysmmtext {
+    font-size: 2rem;
+  }
 
-      font-size: 2rem;
-    }
+  .mediatext {
+    display: inline-flexbox;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
 
-    .mediatext {
-      display: inline-flexbox;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-left: 20px;
-      margin-top: 20px;
-    }
+  .mediatext2 {
+    display: grid;
+    font-size: 0.8rem;
+  }
 
-    .mediatext2 {
-      display: grid;
-      font-size: 0.8rem ;
-    }
+  .socialpic {
+    display: none;
+  }
 
-    .socialpic {
-      display: none;
-    }
+  .mediatitle {
+    padding-top: 80px;
+  }
 
-    .mediatitle {
-      padding-top: 80px;
-    }
+  .socialpic2 {
+    margin-top: -150px;
+    margin-bottom: -10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
 
-    .socialpic2 {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: -150px;
-      margin-bottom: 30px;
-      width: auto;
-      transform: translateX(140px);
-    }
+}
 
 
 
@@ -1155,59 +1170,43 @@ video.zoom {
 
 @media (max-width: 425px) {
 
-  .cards{
-    display: grid;
-    transform: translateX(-22px);
-  }
-
-  .rightcards{
-    transform: translateX(45px);
-  }
-
-  .socialpic2 {
-    transform: translateX(0);
-  }
-
   #whyssm {
     margin-top: 30px;
   }
 
   .whysmmtext {
     font-size: 1.5rem;
-    font-weight:900;
+    font-weight: 900;
   }
 }
 
 @media (max-width: 375px) {
-  .cards{
-    transform: translateX(-20px);
-  }
 
-  .rightcards{
-    transform: translateX(40px);
-  }
-}
 
-@media (max-width: 320px) {
-  .intrologo {
-    width: 60%;
-    height: 50%;
-  }
+  @media (max-width: 320px) {
+    .intrologo {
+      width: 60%;
+      height: 50%;
+    }
 
-  .background-video {
-    height: 60vh;
-  }
+    .background-video {
+      height: 60vh;
+    }
 
-  .background-video video{
-    height: 60%;
-  }
+    .background-video video {
+      height: 60%;
+    }
 
-  .mediatitle {
-    font-size: 2rem;
-  }
+    .mediatitle {
+      font-size: 2rem;
+    }
 
-  .mediatext {
-    margin-left: 13px;
-    font-size: 1.5rem;
+    .mediatext {
+      margin-left: 13px;
+      font-size: 1.5rem;
+    }
+
+    .cardtext {
+      font-size: 0.7rem;
+    }
   }
-}
