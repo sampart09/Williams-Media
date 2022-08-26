@@ -957,7 +957,7 @@ video.zoom {
     position: fixed;
     background-color: rgb(26, 25, 25);
     height: 30vh;
-    width: 25vh;
+    width: 40vh;
     border-radius: 20px;
     box-shadow: 0 0 12px rgb(0, 145, 255);
   }
