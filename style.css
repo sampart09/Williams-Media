@@ -400,6 +400,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding-top: 10%;
+  
 }
 
 .cntform {
@@ -924,6 +925,32 @@ video.zoom {
     height: 70vh;
   }
 
+  .thankyou {
+    width: 80%;
+  }
+
+  .homebtn {
+    transform: translateX(-50px);
+  }
+
+  .contactlogo {
+    display: block;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cntlogo {
+    width: 450px;
+  }
+
+  .smmmax {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 
@@ -1068,6 +1095,27 @@ video.zoom {
     font-size: 0.9rem;
   }
 
+  .contactlogo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .thankyou {
+    margin-top: 100px;
+  }
+
+  .cntlogo {
+    margin-bottom: -200px;
+  }
+
+  .smmmax {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 }
 
@@ -1160,6 +1208,82 @@ video.zoom {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+  }
+
+  #contactme {
+    display: grid;
+    text-align: center;
+    overflow-y:auto;
+    overflow-x: hidden;
+  }
+
+  .cnt-icon {
+    margin-bottom: -80px;
+  }
+
+  .thankyou {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+
+  .tytext {
+    font-size: 1.5rem;
+  }
+
+  .contactlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .homebtn {
+    transform: translateX(0);
+  }
+
+  .homebutton {
+    width: 100%;
+  }
+
+  .cnttext {
+    font-size: 1.2rem;
+  }
+
+  .s1and2{
+    display: grid;
+    justify-content: center;
+  }
+
+  .cntlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -60px;
+  }
+
+  .selector1 {
+    width: 250px;
+    padding-left: 15px;
+  }
+  .selector2 {
+    width: 250px;
+    padding-left: 15px;
+  }
+  .selector7 {
+    width: 250px;
+    padding-left: 15px;
+    height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .selector {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    width: 250px;
+    padding-left: 15px;
   }
 
 }
