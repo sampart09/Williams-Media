@@ -130,7 +130,7 @@ body {
 .navlink:hover {
   text-decoration: none;
   color: rgb(0, 145, 255);
-  
+
 }
 
 
@@ -580,14 +580,13 @@ body {
   color: white;
   font-family: 'Montserrat';
   position: relative;
-  padding-top: 200px;
+  padding-top: 150px;
   z-index: 10;
 }
 
 .mediadiv {
   display: flex;
   flex-direction: row;
-  margin-top: 12%;
   margin-left: 5%;
   margin-right: 5%;
   color: white;
@@ -609,6 +608,11 @@ body {
   width: 90%;
   float: right;
 }
+
+.socialpic2 {
+  display: none;
+}
+
 
 /* Why SSM --Page 3--*/
 
@@ -739,9 +743,10 @@ body {
 }
 
 .smmsubmit:hover {
-  border-color: cadetblue;
-  color: cadetblue;
+  border-color: rgb(0, 145, 255);
+  color: rgb(0, 145, 255);
   text-decoration: none;
+  box-shadow: 0 0 12px rgb(0, 145, 255);
 }
 
 
@@ -926,6 +931,23 @@ video.zoom {
   display: none;
 }
 
+.card-title {
+  font-size: 1.3rem;
+}
+
+.mediatext {
+  display: grid;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.mediatext2 {
+  display: grid;
+  font-size: 1rem ;
+}
+
 
 @media (max-width: 996px) {
   .primary-navigation {
@@ -937,6 +959,7 @@ video.zoom {
     height: 30vh;
     width: 25vh;
     border-radius: 20px;
+    box-shadow: 0 0 12px rgb(0, 145, 255);
   }
 
   .nav-list {
@@ -970,6 +993,7 @@ video.zoom {
 
   .icon-hamburger {
     margin-left: 15px;
+    height: 25px;
   }
 
 
@@ -995,15 +1019,169 @@ video.zoom {
  .social-icon {
    font-size: 2rem;
  }
+
+ .whysmmtext {
+
+  font-size: 2rem;
 }
 
-@media (max-width: 425px) {
+.mediatext {
+  display: inline-flexbox;
+  justify-content: center;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.mediatext2 {
+  display: grid;
+  font-size: 0.8rem ;
+}
+
+.socialpic {
+  transform: translateY(50px);
+}
+
+.mediatitle {
+  padding-top: 100px;
+}
+
+.mediadiv1 {
+  margin-bottom: -70px;
+}
+
+}
+
+@media (max-width: 767px) {
   .titletext {
     font-size: 1.1rem;
   }
 
   .nav-wrapper {
     height: 50px;
+  }
+
+  .smmfullform {
+    display: grid;
+    justify-content: center;
+  }
+  .smmfullform2 {
+    display: grid;
+    justify-content: center;
+    transform: translateX(-3px);
+  }
+  .selectora {
+    width: 250px;
+    padding-left: 15px;
+  }
+  .selectorb {
+    width: 250px;
+    padding-left: 15px;
+  }
+  .selectorc {
+    width: 250px;
+    padding-left: 15px;
+  }
+
+  .selectord {
+    width: 250px;
+    padding-left: 15px;
+  }
+  #textbox {
+    width: 215px;
+    height: 170px;
+  }
+
+  .smmsubmit {
+    display: grid;
+    transform: translate(-150px, -180px);
+    margin-bottom: -160px;
+  }
+
+    .smmformtext {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .cards{
+      display: grid;
+      transform: translateX(-35px);
+    }
+    .rightcards{
+      transform: translateX(77px);
+    }
+
+    .whysmmtext {
+
+      font-size: 2rem;
+    }
+
+    .mediatext {
+      display: inline-flexbox;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .mediatext2 {
+      display: grid;
+      font-size: 0.8rem ;
+    }
+
+    .socialpic {
+      display: none;
+    }
+
+    .mediatitle {
+      padding-top: 80px;
+    }
+
+    .socialpic2 {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -150px;
+      margin-bottom: 30px;
+      width: auto;
+      transform: translateX(140px);
+    }
+
+
+
+}
+
+@media (max-width: 425px) {
+
+  .cards{
+    display: grid;
+    transform: translateX(-22px);
+  }
+
+  .rightcards{
+    transform: translateX(45px);
+  }
+
+  .socialpic2 {
+    transform: translateX(0);
+  }
+
+  #whyssm {
+    margin-top: 30px;
+  }
+
+  .whysmmtext {
+    font-size: 1.5rem;
+    font-weight:900;
+  }
+}
+
+@media (max-width: 375px) {
+  .cards{
+    transform: translateX(-20px);
+  }
+
+  .rightcards{
+    transform: translateX(40px);
   }
 }
 
@@ -1019,5 +1197,14 @@ video.zoom {
 
   .background-video video{
     height: 60%;
+  }
+
+  .mediatitle {
+    font-size: 2rem;
+  }
+
+  .mediatext {
+    margin-left: 13px;
+    font-size: 1.5rem;
   }
 }
