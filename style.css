@@ -965,12 +965,15 @@ video.zoom {
   .nav-list {
     display: grid;
     gap: 0.6rem ;
-    text-align: center;
+    text-align: left;
     padding: 10px;
   }
 
   .navicons {
     margin-top: -20px;
+    padding-bottom: 20px;
+    display: inline;
+    white-space: nowrap;
   }
   
   
