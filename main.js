@@ -1,14 +1,19 @@
-const primaryHeader = document.querySelector(".primary-header");
-const navToggle = document.querySelector(".mobile-nav-toggle");
-const primaryNav = document.querySelector(".primary-navigation");
-
-navToggle.addEventListener("click", () => {
-  primaryNav.hasAttribute("data-visible")
-    ? navToggle.setAttribute("aria-expanded", false)
-    : navToggle.setAttribute("aria-expanded", true);
-  primaryNav.toggleAttribute("data-visible");
-});
 
 
+window.onload = function () {
+	window.addEventListener('scroll', function (e) {
+		if (window.pageYOffset > 100) {
+			document.querySelector("header").classList.add('is-scrolling');
+		} else {
+			document.querySelector("header").classList.remove('is-scrolling');
+		}
+	});
 
+	const menu_btn = document.querySelector('.hamburger');
+	const mobile_menu = document.querySelector('.mobile-nav');
 
+	menu_btn.addEventListener('click', function () {
+		menu_btn.classList.toggle('is-active');
+		mobile_menu.classList.toggle('is-active');
+	});
+}
