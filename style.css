@@ -1155,6 +1155,12 @@ video.zoom {
 }
 
 @media (max-width: 767px) {
+
+  .thumb:not(:hover) {
+    filter: grayscale(0%);
+  }
+
+
   .titletext {
     font-size: 1.1rem;
   }
