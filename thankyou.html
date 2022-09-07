@@ -34,40 +34,38 @@
   <!-- Nav bar-->
   <header class="primary-header">
     <div class="container">
-      <div class="nav-wrapper">
-        <h1 class="titletext">WILLIAMS MEDIA</h1>
-        <nav class="primary-navigation" id="primary-navigation">
-          <ul aria-label="Primary" role="list" class="nav-list | navtextmain">
-            <li><a class="navtext" href="index.html">HOME</a></li>
-            <li><a class="navtext" href="vg.html">VIDEOGRAPHY</a></li>
-            <li><a class="navtext" href="smm.html">SOCIAL MEDIA MANAGEMENT</a></li>
-          </ul>
-          <ul aria-label="Primary" role="list" class="nav-list | navicons">
-            <li><a class="navlink" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
-            <li><a class="navlink" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-            <li><a class="navlink" href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
-            <li><a class="navlink" href="contact.html"><button class="smmmaxbtn" type="button">CONTACT</button></a></li>
-          </ul>
-        </nav>
-        <button class="hamburger">
-          <div class="bar"></div>
-        </button>
-      </div>
+        <div class="nav-wrapper">
+            <h1 class="titletext">WILLIAMS MEDIA</h1>
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul aria-label="Primary" role="list" class="nav-list | navtextmain">
+                    <li><a class="navtext" href="index.html">HOME</a></li>
+                    <li><a class="navtext" href="vg.html">VIDEOGRAPHY</a></li>
+                    <li><a class="navtext" href="smm.html">SOCIAL MEDIA MANAGEMENT</a></li>
+                </ul>
+                <ul aria-label="Primary" role="list" class="nav-list | navicons">
+                    <li><a class="navlink" href="https://www.instagram.com/williamsmedia_"><i
+                                class="fa-brands fa-instagram fa-2x"></i></a></li>
+                    <li><a class="navlink" href="contact.html"><button class="smmmaxbtn"
+                                type="button">CONTACT</button></a></li>
+                </ul>
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
     </div>
-  </header>
+</header>
 
-  <nav class="mobile-nav">
+<nav class="mobile-nav">
     <a href="index.html">HOME</a>
     <a href="vg.html">VIDEOGRAPHY</a>
     <a href="smm.html">SOCIAL MEDIA MANAGEMENT</a>
     <div class="navlk">
-    <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-    <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/williamsmedia_"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
     </div>
     <a href="contact.html"><button class="slidenavbtn" type="button">CONTACT</button></a>
-  </nav>
-
+</nav>
     <!-- Contact Me -->
 
     <section id="contactme">
@@ -103,23 +101,32 @@
     <!-- Footer -->
 
     <footer id="footer">
-        <div class="footertext">
-            <h1 class="ftheading">CONTACT</h1>
-            <br>
-            <h3 class="footeremail">info@max.com</h3> 
-        </div>
-        <div class="footsocial">
-            <h1 class="ftheading">FOLLOW</h1>
-
-            <a href="https://www.instagram.com/williamsmedia_"><i
-                    class="social-icon fa-brands fa-instagram fa-2x"></i></a>
+      <div class="footertext">
+          <h1 class="ftheading">CONTACT</h1>
+          <br>
+          <h3 class="footeremail">info@max.com</h3>
+      </div>
+      <div class="footsocial">
+          <h1 class="ftheading">FOLLOW</h1>
 
 
-            <a href=""><i class="social-icon fa-brands fa-facebook fa-2x"></i></a>
+          <a href="" onclick="sendEmail();"><i class="social-icon fa-solid fa-envelope fa-2x"></i></a>
 
-            <a href=""><i class="social-icon fa-brands fa-linkedin fa-2x"></i></a>
-        </div>
-    </footer>
+
+          <a href="https://www.instagram.com/williamsmedia_"><i
+                  class="social-icon fa-brands fa-instagram fa-2x"></i></a>
+
+
+
+
+      </div>
+  </footer>
+  <script>
+    function sendEmail() 
+    {
+      window.location = "mailto:";
+    }
+    </script>
     <script type="module" src="/main.js"></script>
 </body>
 
