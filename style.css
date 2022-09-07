@@ -381,8 +381,7 @@ body {
   text-align: center;
   background-color: black;
   color: #fff;
-  height: 800px;
-
+  max-height: 660px;
 }
 
 .people {
@@ -405,7 +404,7 @@ body {
 /* Footer */
 
 #footer {
-  margin-top: 1px;
+  margin-top: 40px;
   padding: 1% 15%;
   background-color: white;
   display: flex;
