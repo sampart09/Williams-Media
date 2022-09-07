@@ -405,6 +405,7 @@ body {
 /* Footer */
 
 #footer {
+  margin-top: 1px;
   padding: 1% 15%;
   background-color: white;
   display: flex;
