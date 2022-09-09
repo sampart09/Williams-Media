@@ -385,6 +385,7 @@ body {
 /* testimonials */
 
 #testimonials {
+  display: none;
   text-align: center;
   background-color: black;
   color: #fff;
