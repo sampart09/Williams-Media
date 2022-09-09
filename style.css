@@ -375,15 +375,26 @@ body {
   text-decoration: none;
 }
 
+/* instagram */
+
+.instagram {
+  height: auto;
+  margin-bottom: 20px;
+}
+
 /* testimonials */
 
 #testimonials {
   text-align: center;
   background-color: black;
   color: #fff;
-  max-height: 660px;
+  max-height: 100px;
 }
 
+.blank {
+  width: 100%;
+  height:20px;
+}
 .people {
   text-align: center;
   font-family: 'ubuntu';
