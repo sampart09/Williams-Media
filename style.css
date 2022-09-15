@@ -251,7 +251,7 @@ body {
 }
 
 .background-video .bgimg {
-  transform: translateY(40px);
+  transform: translateY(10px);
   display: none;
   position: absolute;
   top: 0;
@@ -318,7 +318,7 @@ body {
 /* Max */
 
 #max {
-  margin: 0px 0 70px;
+  margin: 10px 0 70px;
   background-color: black;
   color: white;
   display: flex;
