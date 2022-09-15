@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
                 <ul aria-label="Primary" role="list" class="nav-list | navicons">
                     <li><a class="navlink" href="https://www.instagram.com/williamsmedia_"><i
                                 class="fa-brands fa-instagram fa-2x"></i></a></li>
-                    <li><a class="navlink" href="contact.html"><button class="smmmaxbtn"
+                    <li><a class="navlink" href="contact.php"><button class="smmmaxbtn"
                                 type="button">CONTACT</button></a></li>
                 </ul>
             </nav>
@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
         <a href="https://www.instagram.com/williamsmedia_"><i class="fa-brands fa-instagram fa-2x"></i></a>
         <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
     </div>
-    <a href="contact.html"><button class="slidenavbtn" type="button">CONTACT</button></a>
+    <a href="contact.php"><button class="slidenavbtn" type="button">CONTACT</button></a>
 </nav>
 
     <!-- Contact Me -->
