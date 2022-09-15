@@ -1,3 +1,25 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "sampart09@gmail.com"; // this is your Email address
+    $from = $_POST['Email']; // this is the sender's Email address
+    $Name = $_POST['Name'];
+    $Number = $_POST['Number'];
+    $Time_frame = $_POST['Timeframe'];
+    $Duration = $_POST['Duration'];
+    $Location = $_POST['Location'];
+    $Synopsis = $_POST['Synopsis'];
+    $subject = "Enquiry";
+    $subject2 = "Copy of your Enquiry";
+    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['Number'. "\n\n" . 'Timeframe'. "\n\n" .  'Duration'. "\n\n" . 'Location'. "\n\n" . 'Synopsis'.];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['Number'. "\n\n" . 'Timeframe'. "\n\n" .  'Duration'. "\n\n" . 'Location'. "\n\n" . 'Synopsis'.];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    header('Location: thankyou.html');
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -88,7 +110,7 @@
             <br>
         </div>
         <div class="cntform">
-            <form action="https://formsubmit.co/your@email.com" method="POST" >
+            <form method="POST" action="contactform.php" >
 
                 <!-- Honeypot-->
 
@@ -150,7 +172,7 @@
                 <div class="selector2"><h3 class="formtext">Location *</h3><input type="numeric" name="Location" placeholder="Location" id="enquirybox" required><br><br> </div>
                 </div>
                 <div class="selector7"><h3 class="formtext">Brief synopsis of the shoot and its aims *</h3><textarea type="email" name="Synopsis" placeholder="Brief Synopsis and Aims" id="textbox" required></textarea><br><br> </div>
-                <div><button class="smmmax" type="submit" value="Submit">SUBMIT</button>
+                <div><button class="smmmax" type="submit" value="Submit" name="submit">SUBMIT</button>
                     </div>
                     
             </form>
